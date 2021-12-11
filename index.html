@@ -25,6 +25,25 @@
   <main class="container">
     <div class="row">
       <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header bg-dark text-info">
+            Price For Tools:
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-info">Helium Drill: 50</li>
+            <li class="list-group-item bg-dark text-info">Helium Hardened Drill: 250</li>
+          </ul>
+        </div>
+        <div class="card " style="width: 18rem;">
+          <div class="card-header bg-dark text-info">
+            Price For Auto Generators:
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-info">Helium Generator: 450</li>
+            <li class="list-group-item bg-dark text-info">Solar Generator: 1000</li>
+
+          </ul>
+        </div>
       </div>
       <div class="col-md-6">
         <img src="neptune.jpg" class="img-fluid p-5" onclick="harvest()" alt="neptune">
@@ -32,9 +51,11 @@
       </div>
       <div class="col-md-3">
         <h4>Tool Upgrade</h4>
-        <button>Helium Drill</button>
+        <button onclick="helDrill()">Helium Drill: <span id="heliumTool">0</span></button>
+        <button onclick="heliumHardened()"> Helium Hardened Drill: <span id="heliumHD">0</span></button>
         <h4>Auto Generate</h4>
-        <button>Helium Generator</button>
+        <button onclick="helGen()">Helium Generator: <span id="genUp">0</span></button>
+        <button onclick="SolarG()">Solar Generator: <span id="SgenUp">0</span></button>
       </div>
 
     </div>
