@@ -46,10 +46,11 @@ function helDrill() {
     helium -= clickUpgrades.HeliumDrill.price
     clickUpgrades.HeliumDrill.price *= 2
     update()
+    console.log(clickUpgrades.HeliumDrill.price)
   }
 
   document.getElementById('heliumTool').innerHTML = clickUpgrades.HeliumDrill.quantity
-  document.getElementById('hD').innerHTML = clickUpgrades.HeliumDrill.price *= price
+  document.getElementById('hD').innerHTML = clickUpgrades.HeliumDrill.price
 
 
 }
@@ -62,6 +63,7 @@ function heliumHardened() {
     update()
   }
   document.getElementById('heliumHD').innerHTML = clickUpgrades.HeliumDrillHardened.quantity
+  document.getElementById('hhD').innerHTML = clickUpgrades.HeliumDrillHardened.price
 }
 
 
@@ -75,6 +77,7 @@ function helGen() {
     update()
   }
   document.getElementById('genUp').innerHTML = automaticUpgrades.HeliumGenerator.quantity
+  document.getElementById('hgen').innerHTML = automaticUpgrades.HeliumGenerator.price
 }
 
 
@@ -86,6 +89,8 @@ function SolarG() {
     automaticUpgrades.SolarGenerator.price *= 2
     update()
     document.getElementById('SgenUp').innerHTML = automaticUpgrades.SolarGenerator.quantity
+
+    document.getElementById('solarP').innerHTML = automaticUpgrades.SolarGenerator.price
   }
 }
 function collecautoupgrades() {
@@ -96,8 +101,3 @@ function collecautoupgrades() {
 }
 setInterval(collecautoupgrades, 3000)
 
-
-document.getElementById('hhD').innerHTML
-
-document.getElementById('hgen').innerHTML
-document.getElementById('solarP').innerHTML

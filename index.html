@@ -30,8 +30,8 @@
             Price For Tools:
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-dark text-info" id="hD">Helium Drill: 50 </li>
-            <li class="list-group-item bg-dark text-info" id="hhD">Helium Hardened Drill: 250 +2 per click</li>
+            <li class="list-group-item bg-dark text-info">Helium Drill: <span id="hD">50</span> </li>
+            <li class="list-group-item bg-dark text-info">Helium Hardened Drill: <span id="hhD">250</span></li>
           </ul>
         </div>
         <div class="card " style="width: 18rem;">
@@ -39,9 +39,27 @@
             Price For Auto Generators:
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-dark text-info" id="hgen">Helium Generator: 450 +40 every 3 seconds</li>
-            <li class="list-group-item bg-dark text-info" id="solarP">Solar Generator: 1000 +100 every 3 seconds</li>
+            <li class="list-group-item bg-dark text-info">Helium Generator: <span id="hgen">400</span></li>
+            <li class="list-group-item bg-dark text-info">Solar Generator: <span id="solarP">1000</span> </li>
 
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-header bg-dark text-info">
+            Tool Stats:
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-info">Helium drill Adds +1 to each click </li>
+            <li class="list-group-item bg-dark text-info" id="hhD">Helium Hardened Drill adds +2 per click</li>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-header bg-dark text-info">
+            Auto Generator Stats:
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-info" id="hD">Helium Generator adds +40 for every 3 seconds</li>
+            <li class="list-group-item bg-dark text-info" id="hhD">Solar Generator adds +100 for every 3 seconds</li>
           </ul>
         </div>
       </div>
@@ -49,13 +67,14 @@
         <img src="neptune.jpg" class="img-fluid p-5" onclick="harvest()" alt="neptune">
         <h1>Helium: <span id="heliumAmount">0</span></h1>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 bg-dark ">
         <h4>Tool Upgrade</h4>
-        <button onclick="helDrill()">Helium Drill: <span id="heliumTool">0</span></button>
-        <button onclick="heliumHardened()"> Helium Hardened Drill: <span id="heliumHD">0</span></button>
+        <button onclick="helDrill()" class="bg-dark text-info">Helium Drill: <span id="heliumTool">0</span></button>
+        <button onclick="heliumHardened()" class="bg-dark text-info"> Helium Hardened Drill: <span
+            id="heliumHD">0</span></button>
         <h4>Auto Generate</h4>
-        <button onclick="helGen()">Helium Generator: <span id="genUp">0</span></button>
-        <button onclick="SolarG()">Solar Generator: <span id="SgenUp">0</span></button>
+        <button onclick="helGen()" class="bg-dark text-info">Helium Generator: <span id="genUp">0</span></button>
+        <button onclick="SolarG()" class="bg-dark text-info">Solar Generator: <span id="SgenUp">0</span></button>
       </div>
 
     </div>
